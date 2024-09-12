@@ -86,8 +86,8 @@
         };
     };
 
-*/    combos {
-*/        compatible = "zmk,combos";
+    combos {
+        compatible = "zmk,combos";
 
 */        Ejecutar {
 */            bindings = <&kp RG(R)>;
@@ -103,7 +103,7 @@
   */          bindings = <&kp RG(LS(S))>;
   */         key-positions = <25 34 39 27>;
   */      };
-  */  };
+      };
 
     keymap {
         compatible = "zmk,keymap";

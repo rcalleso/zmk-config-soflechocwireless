@@ -86,24 +86,24 @@
         };
     };
 
-    combos {
-        compatible = "zmk,combos";
+*/    combos {
+*/        compatible = "zmk,combos";
 
-        Ejecutar {
-            bindings = <&kp RG(R)>;
-            key-positions = <28 31 27 32>;
-        };
+*/        Ejecutar {
+*/            bindings = <&kp RG(R)>;
+*/            key-positions = <28 31 27 32>;
+*/        };
 
-        Explorer {
-            bindings = <&kp RG(E)>;
-            key-positions = <14 15 16>;
-        };
+ */       Explorer {
+ */           bindings = <&kp RG(E)>;
+ */           key-positions = <14 15 16>;
+ */      };
 
-        Imprimir-Pantalla {
-            bindings = <&kp RG(LS(S))>;
-            key-positions = <25 34 39 27>;
-        };
-    };
+  */      Imprimir-Pantalla {
+  */          bindings = <&kp RG(LS(S))>;
+  */         key-positions = <25 34 39 27>;
+  */      };
+  */  };
 
     keymap {
         compatible = "zmk,keymap";

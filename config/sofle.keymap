@@ -93,7 +93,7 @@
 // |     | UNDO | CUT  | COPY  | PASTE |      |      |  |      |      |      |       |      |       |       |
 //              |      |       |       |      |      |  |      |      |      |       |      |
             bindings = <
-&bt BT_CLR &bt BT0_RGB &bt BT1_RGB &bt BT2_RGB &bt BT3_RGB &bt BT4_RGB             &trans    &trans    &trans   &trans    &trans  &trans
+&bt BT_CLR &bt bt0_rgb &bt bt1_rgb &bt bt2_rgb &bt bt3_rgb &bt bt4_rgb             &trans    &trans    &trans   &trans    &trans  &trans
 &trans     &kp INS      &kp PSCRN    &kp K_CMENU  &trans       &trans                   &kp PG_UP &trans    &kp UP   &trans    &kp N0  &trans
 &trans     &kp LALT     &kp LCTRL    &kp LSHFT    &trans       &kp CLCK                 &kp PG_DN &kp LEFT  &kp DOWN &kp RIGHT &kp DEL &kp BSPC
 &trans     &kp K_UNDO   &kp K_CUT    &kp K_COPY   &kp K_PASTE  &trans  &trans   &trans  &trans    &trans    &trans   &trans    &trans  &trans

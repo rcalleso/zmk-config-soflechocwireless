@@ -9,6 +9,42 @@
 #include <dt-bindings/zmk/bt.h>
 
 / {
+    behaviors {
+        bt0_rgb: behavior_bt0_rgb {
+            compatible = "zmk,behavior-macro";
+            label = "BT0_RGB";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 0 &rgb_ug RGB_COLOR_HSB(300,100,5)>;
+        };
+        bt1_rgb: behavior_bt1_rgb {
+            compatible = "zmk,behavior-macro";
+            label = "BT1_RGB";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 1 &rgb_ug RGB_COLOR_HSB(180,100,5)>;
+        };
+        bt2_rgb: behavior_bt2_rgb {
+            compatible = "zmk,behavior-macro";
+            label = "BT2_RGB";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 2 &rgb_ug RGB_COLOR_HSB(0,100,5)>;
+        };
+        bt3_rgb: behavior_bt3_rgb {
+            compatible = "zmk,behavior-macro";
+            label = "BT3_RGB";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 3 &rgb_ug RGB_COLOR_HSB(120,100,5)>;
+        };
+        bt4_rgb: behavior_bt4_rgb {
+            compatible = "zmk,behavior-macro";
+            label = "BT4_RGB";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 4 &rgb_ug RGB_COLOR_HSB(45,100,5)>;
+        };
+    };
+};
+
+
+/ {
     keymap {
         compatible = "zmk,keymap";
 
@@ -56,7 +92,7 @@
 // |     | UNDO | CUT  | COPY  | PASTE |      |      |  |      |      |      |       |      |       |       |
 //              |      |       |       |      |      |  |      |      |      |       |      |
             bindings = <
-&bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4             &trans    &trans    &trans   &trans    &trans  &trans
+&bt BT_CLR &bt BT0_RGB &bt BT1_RGB &bt BT2_RGB &bt BT3_RGB &bt BT4_RGB             &trans    &trans    &trans   &trans    &trans  &trans
 &trans     &kp INS      &kp PSCRN    &kp K_CMENU  &trans       &trans                   &kp PG_UP &trans    &kp UP   &trans    &kp N0  &trans
 &trans     &kp LALT     &kp LCTRL    &kp LSHFT    &trans       &kp CLCK                 &kp PG_DN &kp LEFT  &kp DOWN &kp RIGHT &kp DEL &kp BSPC
 &trans     &kp K_UNDO   &kp K_CUT    &kp K_COPY   &kp K_PASTE  &trans  &trans   &trans  &trans    &trans    &trans   &trans    &trans  &trans

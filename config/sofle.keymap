@@ -73,19 +73,19 @@
             compatible = "zmk,behavior-macro";
             label = "BT0_RGB";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 0 &rgb_ug RGB_COLOR_HSB(300,100,5)>;
+            bindings = <&bt BT_SEL 0 &rgb_ug RGB_COLOR_HSB(100,100,30)>;
         };
         bt1_rgb: behavior_bt1_rgb {
             compatible = "zmk,behavior-macro";
             label = "BT1_RGB";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 1 &rgb_ug RGB_COLOR_HSB(180,100,5)>;
+            bindings = <&bt BT_SEL 1 &rgb_ug RGB_COLOR_HSB(0,100,30)>;
         };
         bt2_rgb: behavior_bt2_rgb {
             compatible = "zmk,behavior-macro";
             label = "BT2_RGB";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 2 &rgb_ug RGB_COLOR_HSB(0,100,5)>;
+            bindings = <&bt BT_SEL 2 &rgb_ug RGB_COLOR_HSB(240,100,5)>;
         };
         bt3_rgb: behavior_bt3_rgb {
             compatible = "zmk,behavior-macro";

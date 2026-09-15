@@ -15,7 +15,7 @@
 #include <dt-bindings/zmk/rgb.h>
 
 /*
- * Temporarily here because nice nano v2 spi is not defined on ZMK Yet
+ * Temporarily here because nice nano v2 spi is not defined on  ZMK Yet
  * Source: https://github.com/zmkfirmware/zmk/blob/main/app/boards/shields/reviung41/boards/nice_nano.overlay
  * GitHub Issue: https://github.com/zmkfirmware/zmk/issues/885
  */

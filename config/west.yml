@@ -5,7 +5,7 @@ manifest:
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: v0.0.1
+      revision: main  # <-- Cambia v0.0.1 por main o la rama correspondiente
       import: app/west.yml
   self:
     path: config
